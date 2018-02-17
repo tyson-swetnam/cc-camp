@@ -5,10 +5,10 @@ MirrorURL: http://us.archive.ubuntu.com/ubuntu/
 %setup
     # copy demo example script. source: http://ccl.cse.nd.edu/software/manuals/makeflow.html  
     cp makeflow.example $SINGULARITY_ROOTFS/tmp/
-    export PATH=/opt/cctools/bin:$PATH
     
 %post
     echo "deb http://us.archive.ubuntu.com/ubuntu/ xenial main restricted universe multiverse" >/etc/apt/sources.list
+    export PATH=/opt/cctools/bin:$PATH
     
 apt-get update && apt-get install -y --no-install-recommends \
         bison \
