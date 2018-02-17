@@ -22,6 +22,7 @@ apt-get update && apt-get install -y --no-install-recommends \
         gcc \
         libffmpegthumbnailer-dev \
         libgcc1 \
+        python3 \
         unzip \
         vim \
         wget \
