@@ -1,5 +1,6 @@
-Bootstrap:docker
-From: ubuntu:16.04
+BootStrap: debootstrap
+OSVersion: xenial
+MirrorURL: http://us.archive.ubuntu.com/ubuntu/
 
 %setup
     # copy demo example script. source: http://ccl.cse.nd.edu/software/manuals/makeflow.html  
@@ -8,12 +9,10 @@ From: ubuntu:16.04
 %post
     echo "deb http://us.archive.ubuntu.com/ubuntu/ xenial main restricted universe multiverse" >/etc/apt/sources.list
     
-    apt-get update && apt-get install -y --no-install-recommends \
-        curl \
-        imagemagick \
-        texlive-extra-utils \
-        software-properties-common \ # to ease adding new ppas
-        libudunits2-dev # udunits2
+    apt-get update && apt-get install -y \
+        imagemagick 
+    
+     
 
     # Build CCTools
     cd /tmp && \
