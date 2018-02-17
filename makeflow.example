@@ -1,0 +1,23 @@
+#!/bin/bash
+
+CURL=/usr/bin/curl
+CONVERT=/usr/bin/convert
+URL=http://ccl.cse.nd.edu/images/capitol.jpg
+
+capitol.anim.gif: capitol.jpg capitol.90.jpg capitol.180.jpg capitol.270.jpg capitol.360.jpg $CONVERT
+        LOCAL $CONVERT -delay 10 -loop 0 capitol.jpg capitol.90.jpg capitol.180.jpg capitol.270.jpg capitol.360.jpg capitol.270.jpg capitol.180.jpg capitol.90.jpg capitol.anim.gif
+
+capitol.90.jpg: capitol.jpg $CONVERT
+        $CONVERT -swirl 90 capitol.jpg capitol.90.jpg
+
+capitol.180.jpg: capitol.jpg $CONVERT
+        $CONVERT -swirl 180 capitol.jpg capitol.180.jpg
+
+capitol.270.jpg: capitol.jpg $CONVERT
+        $CONVERT -swirl 270 capitol.jpg capitol.270.jpg
+
+capitol.360.jpg: capitol.jpg $CONVERT
+        $CONVERT -swirl 360 capitol.jpg capitol.360.jpg
+
+capitol.jpg: $CURL
+        LOCAL $CURL -o capitol.jpg $URL
