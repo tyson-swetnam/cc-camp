@@ -10,7 +10,7 @@ MirrorURL: http://us.archive.ubuntu.com/ubuntu/
     echo "deb http://us.archive.ubuntu.com/ubuntu/ xenial main restricted universe multiverse" >/etc/apt/sources.list
     export PATH=/opt/cctools/bin:$PATH
     
-apt-get update && apt-get install -y --no-install-recommends \
+apt-get update && apt-get install -y \
         build-essential \
         ccache \
         checkinstall \
@@ -20,14 +20,13 @@ apt-get update && apt-get install -y --no-install-recommends \
         flex \
         g++ \
         gcc \
+        imagemagick \
         libffmpegthumbnailer-dev \
         libgcc1 \
         python3 \
         unzip \
         vim \
         wget \
-        
-     
 
     # Build CCTools
     cd /tmp && \
