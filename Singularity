@@ -27,6 +27,7 @@ apt-get update && apt-get install -y \
         unzip \
         vim \
         wget \
+        zlib
 
     # Build CCTools
     cd /tmp && \
