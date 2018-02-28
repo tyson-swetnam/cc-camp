@@ -89,7 +89,7 @@ Solution: Containerize your software, run anywhere.
 
 +++
 
-<img src="assets/imagery/vertical_large.png" height="200">
+<img src="cyverse-gis/focus-forum/tree/master/assets/imagery/vertical_large.png" height="200">
 
 +++
 
