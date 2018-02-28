@@ -89,10 +89,6 @@ Solution: Containerize your software, run anywhere.
 
 +++
 
-<img src="cyverse-gis/focus-forum/tree/master/assets/imagery/vertical_large.png" height="200">
-
-+++
-
 ## Why Containerize?
 
 - Dependencies can be wicked problems <!-- .element: class="fragment" -->
@@ -192,6 +188,53 @@ Done!
 ```shell
 $ ezs
 $ singularity pull docker://godlovedc/lolcow
+$ singularity run lolcow.img
+
+Done!
+
+```
+
+@[1](Install latest version of Singularity)
+@[2](Pull a pre-built Ubuntu image from Docker Hub)
+@[3](Run the lolcow image)
+@[5](Note, this older version of Singularity uses a `.img` file format)
+
++++
+
+Creating a Singularity container
+
++++
+
+Write a Singularity file
+
+```
+BootStrap: docker
+From: ubuntu:16.04
+
+%post
+    apt-get -y update
+    apt-get -y install fortune cowsay lolcat
+
+%environment
+    export LC_ALL=C
+    export PATH=/usr/games:$PATH
+
+%runscript
+    fortune | cowsay | lolcat
+```
+
+@[1](Here I am using the BootStrap command - note this command has been depreciated in the CLI)
+@[2](I am selecting to use an image hosted on DockerHub - Ubuntu Xenial Xerus 16.04)
+
++++
+@title[Singularity Image from Docker]
+
+## <span style="color: #e49436">Building a Singularity Image</span>
+<br>
+
+```shell
+$ ezs
+$ $ singularity build --name ubuntu.simg Singularity
 $ singularity run lolcow.img
 
 Done!
