@@ -122,7 +122,7 @@ Solution: Containerize your software, run anywhere.
 
 +++
 
-## Building the best Virtual Machine for your research
+## Building the best containers for your research
 
 <img src="https://consequenceofsound.files.wordpress.com/2016/04/screen-shot-2016-04-08-at-10-33-51-am.png" width="500">
 
@@ -159,25 +159,49 @@ $ ezj -R -3
 
 +++
 
-<img src="assets/imagery/RStudio-Logo-Blue-Gradient.png" width="500">
-
-+++
-
-@title[Docker RStudio]
+@title[Singularity base Ubuntu]
 
 ## <span style="color: #e49436">Docker + RStudio</span>
 <br>
 
 ```shell
-$ ezd
-$ sudo usermod -aG docker $USER
-$ exit
-$ docker pull rocker/geospatial
-$ docker run -d -p 8787:8787 rocker/geospatial
+$ ezs
+$ singularity pull --name ubuntu14.simg shub://singularityhub/ubuntu
+$ singularity run ubuntu14.simg
+$ singularity run ubuntu14.simg cat /etc/*release
 
 Done!
 
 ```
+
+@[1](Install latest version of Singularity)
+@[2](Pull a pre-built Ubuntu image from Singularity Hub)
+@[3](Run the Ubuntu image)
+@[4](View the version of the image)
+
++++
+
+@title[Singularity Image from Docker]
+
+## <span style="color: #e49436">Docker + RStudio</span>
+<br>
+
+```shell
+$ ezs
+$ singularity pull docker://godlovedc/lolcow
+$ singularity run lolcow.img
+
+Done!
+
+```
+
+@[1](Install latest version of Singularity)
+@[2](Pull a pre-built Ubuntu image from Docker Hub)
+@[3](Run the lolcow image)
+@[5](Note, this older version of Singularity uses a `.img` file format)
+
++++
+
 
 @[1](install Docker)
 @[2](change `sudo` privileges)
