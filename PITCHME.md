@@ -161,7 +161,7 @@ $ ezj -R -3
 
 @title[Singularity base Ubuntu]
 
-## <span style="color: #e49436">Docker + RStudio</span>
+## <span style="color: #e49436">Pulling Singularity images</span>
 <br>
 
 ```shell
@@ -186,7 +186,7 @@ Done!
 
 @title[Singularity Image from Docker]
 
-## <span style="color: #e49436">Docker + RStudio</span>
+## <span style="color: #e49436">Docker2Singularity</span>
 <br>
 
 ```shell
@@ -246,23 +246,3 @@ How do I scale my research to use hundreds to thousands of computers?
 +++?image=https://github.com/cyverse-gis/focus-forum/blob/master/assets/imagery/eemt_github.PNG?raw=true&size=auto 95%
 
 +++?image=https://github.com/cyverse-gis/focus-forum/blob/master/assets/imagery/eemt_singularity.png.png?raw=true&size=auto 95%
-
----
-
-## Where to get started, if you don't know where to start?
-
-[The Carpentries](https://software-carpentry.org/)
-
-[http://learning.cyverse.org/](http://learning.cyverse.org/)
-
----
-
-<img src="assets/imagery/cyverse_logo_150px.png" width="150">
-
-### CyVerse is supported by the National Science Foundation under Grants No. DBI-0735191 and DBI-1265383.
-
-<img src="assets/imagery/nsf_logo.png" height="75"> 
-<img src="assets/imagery/az.png" height="75"> 
-<img src="assets/imagery/tacc.png" height="75"> 
-<img src="assets/imagery/cshl.png" height="75"> 
-<img src="assets/imagery/uncw.gif" height="75">
