@@ -122,13 +122,13 @@ Solution: Containerize your software, run anywhere.
 
 +++
 
-## Building the best containers for your research
+## Building the best containers
 
 <img src="https://consequenceofsound.files.wordpress.com/2016/04/screen-shot-2016-04-08-at-10-33-51-am.png" width="500">
 
 +++
 
-## Setting up Atmosphere instances as Data Science Workbenches
+## Setting up Atmosphere instances as Data Science Workbench
 
 +++
 
@@ -152,7 +152,7 @@ $ ezs
 $ ezj -R -3
 ```
 
-@[1](View option menu for `ez`)
+@[1](View option menu for Ansible `ez`)
 @[2](Install latest version of Docker)
 @[3](Install latest version of Singularity)
 @[4](Install Anaconda and Jupyter Notebooks w/ Python3 and the R Kernel)
@@ -167,8 +167,9 @@ $ ezj -R -3
 ```shell
 $ ezs
 $ singularity pull --name ubuntu14.simg shub://singularityhub/ubuntu
-$ singularity run ubuntu14.simg
-$ singularity run ubuntu14.simg cat /etc/*release
+$ singularity exec ubuntu14.simg
+$ singularity exec ubuntu14.simg whoami
+$ singulariity exec ubuntu14.simg pwd
 
 Done!
 
@@ -176,8 +177,10 @@ Done!
 
 @[1](Install latest version of Singularity)
 @[2](Pull a pre-built Ubuntu image from Singularity Hub)
-@[3](Run the Ubuntu image)
-@[4](View the version of the image)
+@[3](Execute the image with no commands)
+@[4](See who the user is inside the container)
+@[5](See what the present working directory is inside the container)
+@[7](The container has the same filesystem as the machine!)
 
 +++
 
@@ -202,41 +205,9 @@ Done!
 
 +++
 
-
-@[1](install Docker)
-@[2](change `sudo` privileges)
-@[3](exit and restart terminal window)
-@[4](pull the Rocker/Geospatial Rstudio-Server from DockerHub)
-@[5](Run the Container in detached mode `-d` on port `-p 8787:8787`)
-@[7](Open the Instance's IP address w/ port number in a new browser window)
-
-+++
-
-![Video](https://www.youtube.com/embed/8LSZqWpLbok) 
-
----
-
 <img src="https://upload.wikimedia.org/wikipedia/en/c/cd/Anaconda_Logo.png" height="200"><img src="http://blog.thedataincubator.com/wp-content/uploads/2017/01/jupyter-logo-300x298.png" height="200">
 
 +++
-
-@title[Anaconda]
-
-## <span style="color: #e49436">Anaconda and Jupyter Notebook</span>
-<br>
-
-```shell
-$ ezj -3
-$ sudo chown $USER:iplant-everyone /home/anaconda3 -R
-
-Done!
-```
-
-@[1](Install Anaconda and Jupyter Notebooks w/ Python3 and R Kernel)
-@[2](Change ownership of the Anaconda directory so that you can install new kernels)
-@[4](Open Jupyter via provided URL w/ token)
-
----
 
 <img src="assets/imagery/vertical_large.png" height="200"> <img src="https://secure.gravatar.com/avatar/eebe55e8aac8144c9a0e2e1cac5d9057.jpg" height="200">
 
@@ -272,9 +243,9 @@ Done!
 How do I scale my research to use hundreds to thousands of computers?
 <img src="https://raw.githubusercontent.com/cooperative-computing-lab/makeflow-examples/master/banner.png" width="800">
 
-+++?image=assets/imagery/eemt_github.PNG&size=auto 95%
++++?image=https://github.com/cyverse-gis/focus-forum/blob/master/assets/imagery/eemt_github.PNG?raw=true&size=auto 95%
 
-+++?image=assets/imagery/eemt_singularity.png.png&size=auto 95%
++++?image=https://github.com/cyverse-gis/focus-forum/blob/master/assets/imagery/eemt_singularity.png.png?raw=true&size=auto 95%
 
 ---
 
