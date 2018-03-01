@@ -206,7 +206,30 @@ From: ubuntu:16.04
 @[13](run the three jokes at the same time using the pipe `|`)
 
 +++
-@title[Singularity Image from Docker]
+
+@title[Singularity]
+
+## <span style="color: #e49436">Building a Singularity Image</span>
+<br>
+
+```shell
+$ sudo singularity build --writable ubuntu.simg Singularity
+$ sudo singularity shell ubuntu.simg
+$ fortune | cowsay | lolcat
+$
+
+Done!
+
+```
+
+@[1](Build a writable image using your Singularity file)
+@[2](Enter the bash shell inside the container)
+@[3](Run the lolcow image)
+@[5](Done!)
+
++++
+
+@title[Singularity]
 
 ## <span style="color: #e49436">Building a Singularity Image</span>
 <br>
@@ -225,9 +248,10 @@ Done!
 @[3](Run the lolcow image)
 @[5](Note, this older version of Singularity uses a `.img` file format)
 
+
 +++
 
-## Multi-container jobs with Makeflow
+## Multi-container jobs
 
 +++
 
