@@ -34,25 +34,6 @@ twitter: tswetnam
 
 ---
 
-## The Research Object
-
-+++
-
-<span style="font-size: 150%; color:#ffffff">Okay, what is a [Research Object](http://www.researchobject.org/)?</span>
-
-@[1](<span style="font-size: 150%; font-weight: bold; color:#3685E3">broadly, it is a method for identification, aggregation, and exchange of scholarly information</span>)
-
-+++
-"_Supporting the publication of *more than just PDFs*, making *data*, *code*, and other resources *first class citizens of scholarship*_"
-
-[Research Objects](http://www.researchobject.org/) have:
-
-- Digital identity: DOI, <!-- .element: class="fragment" --> [ORCID](http://orcid.org/) <!-- .element: class="fragment" -->
-
-- Annotation & Provenance <!-- .element: class="fragment" --> *METADATA!* <!-- .element: class="fragment" -->
-
-Most importantly: they are discoverable & reusable <!-- .element: class="fragment" -->
-
 +++
 
 ## Data Science "Workbenches"
@@ -73,10 +54,6 @@ Most importantly: they are discoverable & reusable <!-- .element: class="fragmen
   - Python, R, C++, Matlab, Spark, etc. 
 +++                                             
 
-## Containers
-
-+++
-
 *different OS + third party software + frequent changes and updates + deployment and reproducibility issues* = 
  
 <span style="font-weight: bold; font-size: 150%; color:#FF0000">_Dependency Hell_</span> <!-- .element: class="fragment" -->
@@ -85,7 +62,7 @@ Most importantly: they are discoverable & reusable <!-- .element: class="fragmen
 
 +++
 
-Solution: Containerize your software, run anywhere. 
+## Solution: Containerize your software, run anywhere. 
 
 +++
 
@@ -114,17 +91,13 @@ Solution: Containerize your software, run anywhere.
 
 +++
 
-## Demo
-
-+++
-
 ## Building the best containers
 
 <img src="https://consequenceofsound.files.wordpress.com/2016/04/screen-shot-2016-04-08-at-10-33-51-am.png" width="500">
 
 +++
 
-## Setting up Atmosphere instances as Data Science Workbench
+## Atmosphere / Jetstream instances as Data Science Workbenches
 
 +++
 
@@ -155,7 +128,7 @@ $ ezj -R -3
 
 +++
 
-@title[Singularity base Ubuntu]
+@title[Singularity Hub]
 
 ## <span style="color: #e49436">Pulling Singularity images</span>
 <br>
@@ -165,7 +138,7 @@ $ ezs
 $ singularity pull --name ubuntu14.simg shub://singularityhub/ubuntu
 $ singularity exec ubuntu14.simg
 $ singularity exec ubuntu14.simg whoami
-$ singulariity exec ubuntu14.simg pwd
+$ singularity exec ubuntu14.simg pwd
 
 Done!
 
@@ -240,7 +213,7 @@ From: ubuntu:16.04
 
 ```shell
 $ ezs
-$ $ singularity build --name ubuntu.simg Singularity
+$ singularity build --name ubuntu.simg Singularity
 $ singularity run lolcow.img
 
 Done!
@@ -253,37 +226,6 @@ Done!
 @[5](Note, this older version of Singularity uses a `.img` file format)
 
 +++
-
-<img src="https://upload.wikimedia.org/wikipedia/en/c/cd/Anaconda_Logo.png" height="200"><img src="http://blog.thedataincubator.com/wp-content/uploads/2017/01/jupyter-logo-300x298.png" height="200">
-
-+++
-
-<img src="assets/imagery/vertical_large.png" height="200"> <img src="https://secure.gravatar.com/avatar/eebe55e8aac8144c9a0e2e1cac5d9057.jpg" height="200">
-
-+++
-
-@title[ArcGIS Jupyter Notebook with Docker]
-
-## <span style="color: #e49436">Docker + Jupyter + ArcPy</span>
-<br>
-
-```shell
-$ ezd
-$ usermod -aG docker $USER
-$ exit
-$ docker run -it -p 8888:8888 esridocker/arcgis-api-python-notebook
-
-Done!
-
-```
-
-@[1](Install latest version of Docker using `EZ` installation)
-@[2](Add yourself to the Docker group on your VM so you can run without `sudo`)
-@[3](exit and restart terminal)
-@[4](Pull the ArcGIS Jupyter Docker Container)
-@[6](The Jupyter notebook should now be running on the localhost - change `localhost` out for the VM's IP address)
-
----
 
 ## Multi-container jobs with Makeflow
 
