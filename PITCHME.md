@@ -135,10 +135,8 @@ $ ezj -R -3
 
 ```shell
 $ ezs
+$ singularity pull shub://singularity/ubuntu:latest
 $ singularity pull --name ubuntu14.simg shub://singularityhub/ubuntu
-$ singularity exec ubuntu14.simg
-$ singularity exec ubuntu14.simg whoami
-$ singularity exec ubuntu14.simg pwd
 
 Done!
 
@@ -146,16 +144,36 @@ Done!
 
 @[1](Install latest version of Singularity)
 @[2](Pull a pre-built Ubuntu image from Singularity Hub)
-@[3](Execute the image with no commands)
-@[4](See who the user is inside the container)
-@[5](See what the present working directory is inside the container)
-@[7](The container has the same filesystem as the machine!)
+@[3](Pulls a pre-built image and renames it)
+@[5](Image is now on your localhost)
+
++++
+
+@title[Singularity Hub]
+
+## <span style="color: #e49436">Pulling Singularity images</span>
+<br>
+
+```shell
+$ whoami
+$ cat /etc/*release
+$ singularity exec ubuntu14.simg whoami
+$ singularity exec ubuntu14.simg cat /etc/*release
+
+Done!
+
+```
+
+@[1](View the user profile)
+@[2](View OS release)
+@[3](View the user profile inside the container)
+@[4](View OS release of the container)
 
 +++
 
 @title[Singularity Image from Docker]
 
-## <span style="color: #e49436">Docker2Singularity</span>
+## <span style="color: #e49436">Docker Images</span>
 <br>
 
 ```shell
@@ -184,16 +202,19 @@ Write a basic Singularity file
 BootStrap: docker
 From: ubuntu:16.04
 
+%help
+  "This container tells a joke" 
+  
 %post
-    apt-get -y update
-    apt-get -y install fortune cowsay lolcat
+  apt-get -y update
+  apt-get -y install fortune cowsay lolcat
 
 %environment
-    export LC_ALL=C
-    export PATH=/usr/games:$PATH
+  export LC_ALL=C
+  export PATH=/usr/games:$PATH
 
 %runscript
-    fortune | cowsay | lolcat
+  fortune | cowsay | lolcat
 ```
 
 @[1](Here I am using the BootStrap command - note this command has been depreciated in the CLI)
