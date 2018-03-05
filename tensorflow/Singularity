@@ -8,7 +8,9 @@ BootStrap: debootstrap
 OSVersion: xenial
 MirrorURL: http://us.archive.ubuntu.com/ubuntu/
 
-
+%files
+    tensorflow.sh
+    
 %runscript
     exec /usr/bin/python "$@"
 
@@ -17,12 +19,16 @@ MirrorURL: http://us.archive.ubuntu.com/ubuntu/
     export LD_LIBRARY_PATH
 
 %post
-    # Enable access to ACCRE storage
-    mkdir /dors /scratch /data /gpfs22 /gpfs23
+    . tensorflow.sh
+    
+    mkdir /scratch
 
     sed -i 's/$/ universe/' /etc/apt/sources.list
+    
     apt-get update 
+    
     apt-get -y --force-yes install vim \
+                                   nano \
                                    curl \
                                    libfreetype6-dev \
                                    libpng12-dev \
