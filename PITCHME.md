@@ -131,7 +131,7 @@ $ ezj -R -3
 
 +++
 
-## <span style="color: #e49436">Go with the flow/span>
+## <span style="color: #e49436">Go with the flow</span>
 <br>
 
 <img src="http://singularity.lbl.gov/assets/img/diagram/singularity-2.4-flow.png" height="500">
