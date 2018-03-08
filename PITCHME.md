@@ -223,8 +223,8 @@ From: ubuntu:16.04
   fortune | cowsay | lolcat
 ```
 
-@[1](Here I am using the BootStrap command - note this command has been depreciated in the CLI)
-@[2](I am selecting to use an image hosted on DockerHub - Ubuntu Xenial Xerus 16.04)
+@[1](Select the repository for the container - could be `docker` `shub` `yum`)
+@[2](I am selecting to use an image hosted on Hub.Docker - Ubuntu Xenial Xerus 16.04)
 @[4](%help is a simple help text)
 @[6](The %post command runs Bash commands like `apt-get` to install dependencies or programs)
 @[9](The %environment settings, exporting paths for where to look for the commands)
@@ -252,28 +252,6 @@ Done!
 @[3](Enter the bash shell inside the container)
 @[4](Run the the programs inside the shell)
 @[6](Done!)
-
-+++
-
-@title[Singularity]
-
-## <span style="color: #e49436">Building a Singularity Image</span>
-<br>
-
-```shell
-$ ezs
-$ singularity build --name ubuntu.simg Singularity
-$ singularity run lolcow.img
-
-Done!
-
-```
-
-@[1](Install latest version of Singularity)
-@[2](Pull a pre-built Ubuntu image from Docker Hub)
-@[3](Run the lolcow image)
-@[5](Note, this older version of Singularity uses a `.img` file format)
-
 
 +++
 
