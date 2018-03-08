@@ -57,9 +57,9 @@ twitter: tswetnam
 
 *different OS + third party software + frequent changes and updates + deployment and reproducibility issues* = 
  
-<span style="font-weight: bold; font-size: 150%; color:#FF0000">_Dependency Hell_</span> <!-- .element: class="fragment" -->
+<span style="font-weight: bold; font-size: 100%; color:#FF0000">_Dependency Hell_</span> <!-- .element: class="fragment" -->
 
-<img src="https://pbs.twimg.com/media/DB6QcoNVYAA-w6N.jpg" width="350"> <!-- .element: class="fragment" -->
+<img src="https://pbs.twimg.com/media/DB6QcoNVYAA-w6N.jpg" width="550"> <!-- .element: class="fragment" -->
 
 +++
 
