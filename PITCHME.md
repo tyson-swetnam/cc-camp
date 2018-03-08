@@ -227,12 +227,10 @@ From: ubuntu:16.04
 
 @[1](Here I am using the BootStrap command - note this command has been depreciated in the CLI)
 @[2](I am selecting to use an image hosted on DockerHub - Ubuntu Xenial Xerus 16.04)
-@[4](The %post command runs Bash commands like `apt-get` to install dependencies or programs)
-@[5](Update!)
-@[6](install jokes)
-@[8](The %environment settings, exporting paths for where to look for the commands)
-@[12](The %runscript executes the scripts in the container)
-@[13](run the three jokes at the same time using the pipe `|`)
+@[4](%help is a simple help text)
+@[7](The %post command runs Bash commands like `apt-get` to install dependencies or programs)
+@[11](The %environment settings, exporting paths for where to look for the commands)
+@[15](The %runscript executes the scripts in the container)
 
 +++
 
