@@ -1,5 +1,5 @@
 ---?image=assets/imagery/merged.png&size=cover
-<span style="font-weight: bold; font-size: 150%; color:#FFFF00">Introduction to Singularity</span>
+<span style="font-weight: bold; font-size: 150%; color:##FF0000">Introduction to Singularity</span>
 
 +++
 
@@ -22,15 +22,15 @@ twitter: tswetnam
 ### Our Roadmap
 
 
-<span style="color:#ffffff"> Why use Singularity? </span> <!-- .element: class="fragment" -->
+<span style="color:#FF0000"> Why use Singularity? </span> <!-- .element: class="fragment" -->
 
-<span style="color:#ffffff"> Installation of Singularity </span> <!-- .element: class="fragment" -->
+<span style="color:#FF0000"> Installation of Singularity </span> <!-- .element: class="fragment" -->
 
-<span style="color:#ffffff"> Pulling Containers </span> <!-- .element: class="fragment" -->
+<span style="color:#FF0000"> Pulling Containers </span> <!-- .element: class="fragment" -->
 
-<span style="color:#ffffff"> Building a Singularity container </span> <!-- .element: class="fragment" -->
+<span style="color:#FF0000"> Building a Singularity container </span> <!-- .element: class="fragment" -->
 
-<span style="color:#ffffff"> Running Singularity </span> <!-- .element: class="fragment" -->
+<span style="color:#FF0000"> Running Singularity </span> <!-- .element: class="fragment" -->
 
 ---
 
