@@ -92,10 +92,12 @@ twitter: tswetnam
 +++
 
 - Shares _most_ of the host environment
-  - all mounted volumes
-- `root` privileges inside container
-  - install your own software on HPC!
-- Build your own image or use a Dockerfile
+  - same file system as Linux OS
+  - bind extra volumes
+- Build your own images 
+  - Singularity file
+  - Dozens of registries
+  - existing Docker containers 
 
 +++
 
@@ -185,17 +187,15 @@ Done!
 <br>
 
 ```shell
-$ ezs
 $ singularity pull docker://godlovedc/lolcow
-$ singularity run lolcow.img
+$ singularity run lolcow.simg
 
 Done!
 
 ```
 
-@[1](Install latest version of Singularity)
-@[2](Pull a pre-built Ubuntu image from Docker Hub)
-@[3](Run the lolcow image)
+@[1](Pull a pre-built Ubuntu image from Docker Hub)
+@[2](Run the lolcow image)
 @[5](Note, this older version of Singularity uses a `.img` file format)
 
 +++
