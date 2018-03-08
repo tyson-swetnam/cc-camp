@@ -122,12 +122,14 @@ $ ez
 $ ezd
 $ ezs
 $ ezj -R -3
+$ ezjh
 ```
 
 @[1](View option menu for Ansible `ez`)
 @[2](Install latest version of Docker)
 @[3](Install latest version of Singularity)
 @[4](Install Anaconda and Jupyter Notebooks w/ Python3 and the R Kernel)
+@[4](Install Jupyter-Hub with CyVerse CAS)
 
 +++
 
