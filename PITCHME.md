@@ -112,14 +112,6 @@ twitter: tswetnam
 
 +++
 
-- Create a new instance in Atmosphere / Jetstream
-
-- If you are planning to "image" the instance, select the smallest functional size.
-
-  - Install new software into `/opt` `/srv`
-
-+++
-
 @title[EZ Install]
 
 ## <span style="color: #e49436">EZ Install</span>
@@ -136,6 +128,13 @@ $ ezj -R -3
 @[2](Install latest version of Docker)
 @[3](Install latest version of Singularity)
 @[4](Install Anaconda and Jupyter Notebooks w/ Python3 and the R Kernel)
+
++++
+
+## <span style="color: #e49436">Go with the flow/span>
+<br>
+
+<img src="http://singularity.lbl.gov/assets/img/diagram/singularity-2.4-flow.png" height="500">
 
 +++
 
