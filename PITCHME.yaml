@@ -2,5 +2,5 @@
 logo: https://github.com/cyverse-gis/focus-forum/blob/master/assets/imagery/cyverse_icon_white_tm.png?raw=true
 # background: assets/imagery/merged.png
 background-size: cover
-theme: sky
+theme: white
 transition: fade
