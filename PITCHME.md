@@ -48,10 +48,11 @@ twitter: tswetnam
 
 ### A data science workbench allows: 
 
-- Work in your preferred environment, languages, and libraries 
-- Select the tools you want to use
-- Write in a computational notebook  
+- Favored environment, languages, and libraries 
+- Tools you want to use
+- Computational notebooks 
   - Python, R, C++, Matlab, Spark, etc. 
+  
 +++                                             
 
 *different OS + third party software + frequent changes and updates + deployment and reproducibility issues* = 
