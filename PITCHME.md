@@ -196,7 +196,6 @@ Done!
 
 @[1](Pull a pre-built Ubuntu image from Docker Hub)
 @[2](Run the lolcow image)
-@[5](Note, this older version of Singularity uses a `.img` file format)
 
 +++
 
@@ -212,15 +211,12 @@ From: ubuntu:16.04
 
 %help
   "This container tells a joke" 
-  
 %post
   apt-get -y update
   apt-get -y install fortune cowsay lolcat
-
 %environment
   export LC_ALL=C
   export PATH=/usr/games:$PATH
-
 %runscript
   fortune | cowsay | lolcat
 ```
@@ -228,9 +224,9 @@ From: ubuntu:16.04
 @[1](Here I am using the BootStrap command - note this command has been depreciated in the CLI)
 @[2](I am selecting to use an image hosted on DockerHub - Ubuntu Xenial Xerus 16.04)
 @[4](%help is a simple help text)
-@[7](The %post command runs Bash commands like `apt-get` to install dependencies or programs)
-@[11](The %environment settings, exporting paths for where to look for the commands)
-@[15](The %runscript executes the scripts in the container)
+@[6](The %post command runs Bash commands like `apt-get` to install dependencies or programs)
+@[9](The %environment settings, exporting paths for where to look for the commands)
+@[12](The %runscript executes the scripts in the container)
 
 +++
 
@@ -240,19 +236,20 @@ From: ubuntu:16.04
 <br>
 
 ```shell
-$ sudo singularity build --writable ubuntu.simg Singularity
-$ sudo singularity shell ubuntu.simg
+$ sudo singularity build --writable cowsay.simg Singularity
+$ singularity run cowsay.simg
+$ singularity shell cowsay.simg
 $ fortune | cowsay | lolcat
-$
 
 Done!
 
 ```
 
 @[1](Build a writable image using your Singularity file)
-@[2](Enter the bash shell inside the container)
-@[3](Run the lolcow image)
-@[5](Done!)
+@[2](Run the new image)
+@[3](Enter the bash shell inside the container)
+@[4](Run the the programs inside the shell)
+@[6](Done!)
 
 +++
 
