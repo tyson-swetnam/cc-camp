@@ -261,6 +261,10 @@ Scale your research to hundreds and thousands of cores?
 
 <img src="https://raw.githubusercontent.com/cooperative-computing-lab/makeflow-examples/master/banner.png" width="800">
 
-+++?image=https://github.com/cyverse-gis/focus-forum/blob/master/assets/imagery/eemt_github.PNG?raw=true&size=auto
++++
 
-+++?image=https://github.com/cyverse-gis/focus-forum/blob/master/assets/imagery/eemt_singularity.png.png?raw=true&size=auto
+<img src="https://github.com/cyverse-gis/focus-forum/blob/master/assets/imagery/eemt_github.PNG" width="800">
+
++++
+
+<img src="https://github.com/cyverse-gis/focus-forum/blob/master/assets/imagery/eemt_singularity.png.png" width="800">
