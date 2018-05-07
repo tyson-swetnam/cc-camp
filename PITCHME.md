@@ -78,7 +78,7 @@ twitter: tswetnam
 
 *Turing Tarpit - Alan Perlis 1982 Epigrams on Programming*
 
-<img src="https://img00.deviantart.net/58af/i/2012/093/a/c/la_brea_tar_pits_by_felipenn-d4uxy05.jpg" width="450"> <!-- .element: class="fragment" -->
+<img src="https://img00.deviantart.net/58af/i/2012/093/a/c/la_brea_tar_pits_by_felipenn-d4uxy05.jpg" width="400"> <!-- .element: class="fragment" -->
 
 <span style="font-weight: bold; font-size: 80%; color:#FF0000">_Beware of the Turing tar-pit in which everything is possible but nothing of interest is easy._</span> <!-- .element: class="fragment" -->
 
@@ -129,7 +129,7 @@ $ ezjh
 @[2](Install latest version of Docker)
 @[3](Install latest version of Singularity)
 @[4](Install Anaconda and Jupyter Notebooks w/ Python3 and the R Kernel)
-@[4](Install Jupyter-Hub with CyVerse CAS)
+@[5](Install Jupyter-Hub with CyVerse CAS)
 
 +++
 
@@ -193,7 +193,6 @@ $ singularity pull docker://godlovedc/lolcow
 $ singularity run lolcow.simg
 
 Done!
-
 ```
 
 @[1](Pull a pre-built Ubuntu image from Docker Hub)
@@ -207,7 +206,7 @@ Creating a Singularity container
 
 Write a basic Singularity file
 
-```
+```shell
 BootStrap: docker
 From: ubuntu:16.04
 
@@ -226,9 +225,9 @@ From: ubuntu:16.04
 @[1](Select the repository for the container - could be `docker` `shub` `yum`)
 @[2](I am selecting to use an image hosted on Hub.Docker - Ubuntu Xenial Xerus 16.04)
 @[4](%help is a simple help text)
-@[6](The %post command runs Bash commands like `apt-get` to install dependencies or programs)
-@[9](The %environment settings, exporting paths for where to look for the commands)
-@[12](The %runscript executes the scripts in the container)
+@[6](%post command runs Bash commands like `apt-get` to install dependencies or programs)
+@[9](%environment settings, exporting paths for where to look for the commands)
+@[12](%runscript executes the scripts in the container)
 
 +++
 
@@ -244,7 +243,6 @@ $ singularity shell cowsay.simg
 $ fortune | cowsay | lolcat
 
 Done!
-
 ```
 
 @[1](Build a writable image using your Singularity file)
@@ -255,11 +253,11 @@ Done!
 
 +++
 
-## Multi-container jobs
+## Multi-container jobs?
 
 +++
 
-How do I scale my research to use hundreds to thousands of computers?
+Scale your research to hundreds and thousands of cores?
 <img src="https://raw.githubusercontent.com/cooperative-computing-lab/makeflow-examples/master/banner.png" width="800">
 
 +++?image=https://github.com/cyverse-gis/focus-forum/blob/master/assets/imagery/eemt_github.PNG?raw=true&size=auto 95%
