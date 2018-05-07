@@ -59,7 +59,7 @@ twitter: tswetnam
  
 <span style="font-weight: bold; font-size: 100%; color:#FF0000">_Dependency Hell_</span> <!-- .element: class="fragment" -->
 
-<img src="https://imgs.xkcd.com/comics/python_environment_2x.png" width="550"> <!-- .element: class="fragment" -->
+<img src="https://imgs.xkcd.com/comics/python_environment_2x.png" width="500"> <!-- .element: class="fragment" -->
 
 +++
 
