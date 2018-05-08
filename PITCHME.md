@@ -1,4 +1,5 @@
----?image=assets/imagery/merged.png&size=cover
+---?http://singularity.lbl.gov/images/logo/logo.svg&size=cover
+
 <span style="font-weight: bold; font-size: 150%; color:##FF0000">Introduction to Singularity</span>
 
 +++
