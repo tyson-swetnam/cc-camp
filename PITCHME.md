@@ -101,23 +101,23 @@ twitter: tswetnam
 
 ## What makes Singularity different or better than Docker?
 
-- Shares _most_ of the host environment
-  - same file system as Linux OS
-  - bind extra volumes
-- Build your own images 
-  - Singularity file
-  - Dozens of registries
-  - existing Docker containers 
+- Shares _most_ of the host environment <!-- .element: class="fragment" -->
+  - same file system as Linux OS <!-- .element: class="fragment" -->
+  - bind extra volumes <!-- .element: class="fragment" -->
+- Build your own images <!-- .element: class="fragment" --> 
+  - Singularity file <!-- .element: class="fragment" -->
+  - Dozens of registries <!-- .element: class="fragment" -->
+  - **reuse** existing Docker containers <!-- .element: class="fragment" -->
 
 +++
 
-## Building the best containers
+## Building the "best" containers takes time
 
 <img src="https://consequenceofsound.files.wordpress.com/2016/04/screen-shot-2016-04-08-at-10-33-51-am.png" width="500">
 
 +++
 
-## CyVerse Atmosphere: a Data Science Workbench
+## CyVerse Atmosphere example as a Data Science Workbench
 
 +++
 
