@@ -87,7 +87,7 @@ For the same reasons we talked about Docker yesterday <!-- .element: class="frag
 - Dependencies turn into wicked problems <!-- .element: class="fragment" -->
 - Compiling software is sloooowww <!-- .element: class="fragment" -->
 - Reproducability is hard across platforms <!-- .element: class="fragment" -->
-- Portability <!-- .element: class="fragment" --> & _Scalability_ <!-- .element: class="fragment" -->
+- Portability <!-- .element: class="fragment" -->  & <!-- .element: class="fragment" --> **_Scalability_** <!-- .element: class="fragment" -->
 
 +++
 
