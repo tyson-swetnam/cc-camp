@@ -270,8 +270,4 @@ Scale your research to hundreds and thousands of cores?
 
 +++
 
-<img src="/imagery/eemt_github.png" width="800">
-
-+++
-
-<img src="https://github.com/cyverse-gis/focus-forum/blob/master/assets/imagery/eemt_singularity.png.png" width="800">
+<img src="https://raw.githubusercontent.com/cyverse-gis/focus-forum/master/assets/imagery/eemt_singularity.png.png" width="800">
