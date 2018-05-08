@@ -83,11 +83,11 @@ twitter: tswetnam
 
 ## Why Containerize?
 
-For the same reasons we talked about Docker yesterday <span style="font-weight: bold; font-size: 80%; color:#FF0000"> <!-- .element: class="fragment" -->
+<span style="font-weight: bold; font-size: 80%; color:#FF0000"> For the same reasons we talked about Docker yesterday <!-- .element: class="fragment" -->
 - Dependencies turn into wicked problems <!-- .element: class="fragment" -->
 - Compiling software is sloooowww <!-- .element: class="fragment" -->
 - Reproducability is hard across platforms <!-- .element: class="fragment" -->
-- Portability <!-- .element: class="fragment" --> & <!-- .element: class="fragment" --> **_Scalability_** <!-- .element: class="fragment" -->
+- Portability <!-- .element: class="fragment" --> **& _Scalability_** <!-- .element: class="fragment" -->
 
 +++
 
