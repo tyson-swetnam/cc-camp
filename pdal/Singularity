@@ -1,21 +1,20 @@
 Bootstrap: docker
-From: alpine
+From: alpine:3.7
 
 %post
-
-echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories; \
+    echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories; \
     echo "@edgecommunity http://dl-cdn.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories; \
     apk update; \
     apk add --no-cache --virtual .build-deps \
         alpine-sdk \
         unzip \
         cmake \
-        eigen-dev@edgecommunity \
         hexer-dev \
         nitro-dev \
         gdal-dev \
         geos-dev \
         laz-perf-dev \
+        libexecinfo-dev \
         libgeotiff-dev \
         libxml2-dev \
         python-dev \
@@ -37,11 +36,13 @@ echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositorie
         zlib-dev \
     ; \
     apk add --no-cache \
+        eigen-dev@edgecommunity \
         hexer \
         nitro \
         gdal \
         geos \
         laz-perf \
+        libexecinfo \
         libgeotiff \
         libxml2 \
         python \
@@ -75,8 +76,6 @@ echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositorie
     rm -rf /vdatum; \
     git clone https://github.com/hobu/jsoncpp.git /jsoncpp; \
     cd /jsoncpp; \
-    export CXX=/usr/bin/clang++; \
-    export CC=/usr/bin/clang; \
     cmake -DCMAKE_BUILD_TYPE=Release \
         -DCMAKE_INSTALL_PREFIX=/usr \
         -DBUILD_SHARED_LIBS=ON \
@@ -101,13 +100,12 @@ echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositorie
     rm -rf /laszip; \
     git clone https://github.com/PDAL/PDAL.git /pdal; \
     cd /pdal; \
+    git checkout 1.7-maintenance; \
     mkdir -p _build; \
     cd _build; \
     cmake .. \
         -G "Unix Makefiles" \
         -DCMAKE_BUILD_TYPE=Release \
-        -DCMAKE_C_COMPILER=gcc \
-        -DCMAKE_CXX_COMPILER=g++ \
         -DCMAKE_MAKE_PROGRAM=make \
         -DBUILD_PLUGIN_PYTHON=ON \
         -DBUILD_PLUGIN_CPD=ON \
