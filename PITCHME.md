@@ -24,7 +24,7 @@ twitter: tswetnam
 
 ### Our Roadmap
 
-<span style="color:#FF0000"> The Data Science Workbench? </span> <!-- .element: class="fragment" -->
+<span style="color:#FF0000"> The Data Science Workbench </span> <!-- .element: class="fragment" -->
 
 <span style="color:#FF0000"> Why Singularity? </span> <!-- .element: class="fragment" -->
 
