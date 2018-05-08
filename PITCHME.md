@@ -101,13 +101,13 @@ twitter: tswetnam
 
 ## What makes Singularity different or better than Docker?
 
-- Shares _most_ of the host environment <!-- .element: class="fragment" -->
+- Shares most of the host environment <!-- .element: class="fragment" -->
   - same file system as Linux OS <!-- .element: class="fragment" -->
   - bind extra volumes <!-- .element: class="fragment" -->
 - Build your own images <!-- .element: class="fragment" --> 
   - Singularity file <!-- .element: class="fragment" -->
   - Dozens of registries <!-- .element: class="fragment" -->
-  - **reuse** existing Docker containers <!-- .element: class="fragment" -->
+  - Use existing Docker containers <!-- .element: class="fragment" -->
 
 +++
 
