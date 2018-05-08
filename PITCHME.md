@@ -1,4 +1,6 @@
-[Logo](http://singularity.lbl.gov/images/logo/logo.svg)
+----
+
+<img src="http://singularity.lbl.gov/images/logo/logo.svg" height="400">
 
 <span style="font-weight: bold; font-size: 150%; color:##FF0000">Introduction to Singularity</span>
 
@@ -10,11 +12,11 @@
 
 +++
 
-### Contact Info
+### My Contact Info
 
 tswetnam@cyverse.org
 
-github: [tyson-swetnam](https://github.com/tyson-swetnam) [cyverse-gis](https://github.com/cyverse-gis)
+github id: [tyson-swetnam](https://github.com/tyson-swetnam) & [cyverse-gis](https://github.com/cyverse-gis)
 
 twitter: tswetnam
 
