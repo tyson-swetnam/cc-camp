@@ -231,7 +231,7 @@ From: ubuntu:16.04
   fortune | cowsay | lolcat
 ```
 
-@[1](Select the repository for the container - could be `docker` `shub` `yum`)
+@[1](Select the repository for the container - could be `docker`, `shub`, or `yum`)
 @[2](I am selecting to use an image hosted on Hub.Docker - Ubuntu Xenial Xerus 16.04)
 @[4](%help is a simple help text)
 @[6](%post command runs Bash commands like `apt-get` to install dependencies or programs)
