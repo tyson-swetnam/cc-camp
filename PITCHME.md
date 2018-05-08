@@ -1,4 +1,4 @@
----?http://singularity.lbl.gov/images/logo/logo.svg&size=cover
+[Logo](http://singularity.lbl.gov/images/logo/logo.svg)
 
 <span style="font-weight: bold; font-size: 150%; color:##FF0000">Introduction to Singularity</span>
 
@@ -22,18 +22,17 @@ twitter: tswetnam
 
 ### Our Roadmap
 
+<span style="color:#FF0000"> The Data Science Workbench? </span> <!-- .element: class="fragment" -->
 
-<span style="color:#FF0000"> Why use Singularity? </span> <!-- .element: class="fragment" -->
+<span style="color:#FF0000"> Why Singularity? </span> <!-- .element: class="fragment" -->
 
-<span style="color:#FF0000"> Installation of Singularity </span> <!-- .element: class="fragment" -->
+<span style="color:#FF0000"> Installation </span> <!-- .element: class="fragment" -->
 
-<span style="color:#FF0000"> Pulling Containers </span> <!-- .element: class="fragment" -->
+<span style="color:#FF0000"> Pulling existing containers </span> <!-- .element: class="fragment" -->
 
-<span style="color:#FF0000"> Building a Singularity container </span> <!-- .element: class="fragment" -->
+<span style="color:#FF0000"> Building a Singularity file</span> <!-- .element: class="fragment" -->
 
 <span style="color:#FF0000"> Running Singularity </span> <!-- .element: class="fragment" -->
-
----
 
 +++
 
@@ -56,42 +55,49 @@ twitter: tswetnam
   
 +++                                             
 
-*different OS + third party software + frequent changes and updates + deployment and reproducibility issues* = 
- 
+## What are some possible pitfalls in designing bespoke software and environments?
+
++++
+
 <span style="font-weight: bold; font-size: 100%; color:#FF0000">_Dependency Hell_</span> <!-- .element: class="fragment" -->
 
+*different OS + third party software + updates/upgrades + redeployment* = 
+ 
 <img src="https://imgs.xkcd.com/comics/python_environment_2x.png" width="400"> <!-- .element: class="fragment" -->
 
 +++
 
-## Solution: Containerize your software, run anywhere. 
+**Turing Tarpit** - Alan Perlis, 1982 Epigrams on Programming
+
+<img src="https://img00.deviantart.net/58af/i/2012/093/a/c/la_brea_tar_pits_by_felipenn-d4uxy05.jpg" width="400"> <!-- .element: class="fragment" -->
+
+<span style="font-weight: bold; font-size: 80%; color:#FF0000">_Beware of the Turing tar-pit in which **everything is possible** but **nothing of interest is easy**_</span> <!-- .element: class="fragment" -->
+
++++
+
+## Solution: Containerize your software, run it anywhere. 
 
 +++
 
 ## Why Containerize?
 
-- Dependencies can be wicked problems <!-- .element: class="fragment" -->
-- Compiling software is slow <!-- .element: class="fragment" -->
-- Reproducability is hard <!-- .element: class="fragment" -->
-- Portability <!-- .element: class="fragment" -->
+For the same reasons we talked about Docker yesterday <!-- .element: class="fragment" -->
+- Dependencies turn into wicked problems <!-- .element: class="fragment" -->
+- Compiling software is sloooowww <!-- .element: class="fragment" -->
+- Reproducability is hard across platforms <!-- .element: class="fragment" -->
+- Portability <!-- .element: class="fragment" --> & _Scalability_ <!-- .element: class="fragment" -->
 
 +++
 
-*Turing Tarpit - Alan Perlis 1982 Epigrams on Programming*
-
-<img src="https://img00.deviantart.net/58af/i/2012/093/a/c/la_brea_tar_pits_by_felipenn-d4uxy05.jpg" width="400"> <!-- .element: class="fragment" -->
-
-<span style="font-weight: bold; font-size: 80%; color:#FF0000">_Beware of the Turing tar-pit in which everything is possible but nothing of interest is easy._</span> <!-- .element: class="fragment" -->
-
-+++
-
-## Containers for HPC
+## Singularity Containers for HPC
 
 <img src="http://singularity.lbl.gov/images/logo/logo.svg" width="250">
 
 [Singularity](http://singularity.lbl.gov)
 
 +++
+
+## What makes Singularity different or better than Docker?
 
 - Shares _most_ of the host environment
   - same file system as Linux OS
@@ -109,7 +115,7 @@ twitter: tswetnam
 
 +++
 
-## Atmosphere / Jetstream instances as Data Science Workbenches
+## CyVerse Atmosphere: a Data Science Workbench
 
 +++
 
@@ -254,7 +260,7 @@ Done!
 
 +++
 
-## Multi-container jobs?
+## Need to run Multi-container jobs?
 
 +++
 
@@ -264,7 +270,7 @@ Scale your research to hundreds and thousands of cores?
 
 +++
 
-<img src="https://github.com/cyverse-gis/focus-forum/blob/master/assets/imagery/eemt_github.PNG" width="800">
+<img src="/imagery/eemt_github.png" width="800">
 
 +++
 
